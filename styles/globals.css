@@ -1,3 +1,5 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 html,
 body {
   padding: 0;
@@ -13,4 +15,57 @@ a {
 
 * {
   box-sizing: border-box;
+}
+div.home {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+div.item {
+  background-color: lightblue;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: 26.875rem;
+}
+div.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+div.item > img.image {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.slick-dots {
+  bottom: 7px !important;
+}
+.slick-next {
+  right: 6% !important;
+  z-index: 100;
+}
+.slick-prev {
+  left: 6% !important;
+  z-index: 100;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 40px !important;
+}
+
+div.description.left {
+  left: 65% !important;
+}
+.body {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 12px;
 }
